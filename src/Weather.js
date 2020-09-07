@@ -129,6 +129,9 @@ export default function Weather(props) {
           <span className="temp">20°</span>
         </div>
       </div>
+     
     </div>
+    
+    
   );
 }

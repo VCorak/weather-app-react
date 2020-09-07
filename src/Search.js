@@ -3,9 +3,7 @@ import Weather from "./Weather";
 import "./Search.css";
 
 export default function Search() {
-  const [city, setCity] = useState(null
-    
-    );
+  const [city, setCity] = useState(null);
   const [result, setResult] = useState(null);
 
   function handleSubmit(event) {
