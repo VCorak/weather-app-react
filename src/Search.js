@@ -12,6 +12,7 @@ export default function Search() {
   }
 
   function updateCity(event) {
+    let city = "Antwerp";
     setCity(event.target.value);
   }
 
