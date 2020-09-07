@@ -36,3 +36,7 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+
+.Container small {
+  margin: 0 auto;
+}
