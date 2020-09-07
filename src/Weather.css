@@ -1,0 +1,59 @@
+.Weather {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.Indicators {
+  margin-top: 20px;
+}
+
+.clearfix-weather-values img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+
+.clearfix-weather-values strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.clearfix-weather-values .symbols {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.symbols .active:hover {
+  text-decoration: none;
+}
+
+.HourlyForecast {
+  margin: 20px auto;
+}
+
+.HourlyForecast .time,
+.temp {
+  color: rgb(186, 186, 186);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+  white-space: nowrap;
+}
+
+.HourlyForecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
