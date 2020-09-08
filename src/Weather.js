@@ -17,7 +17,7 @@ export default function Weather(props) {
         <div className="col-6">
           <div className="clearfix-weather-values">
             <img
-              src={`http://openweathermap.org/img/wn/${props.result.icon}@2x.png`}
+              src={props.result.icon}
               alt={props.result.description}
               className="float-left"
             />
