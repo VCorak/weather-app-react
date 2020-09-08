@@ -1,13 +1,13 @@
 .App {
   max-width: 600px;
   margin: 30px auto;
+}
+.Container {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
   font-family: arial, sans-serif;
 }
-
-
 
 h1 {
   color: #878787;
