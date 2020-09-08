@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormatDate from "./FormatDate";
+import WeatherIcon from "./WeatherIcon";
 
 import "./Weather.css";
 
@@ -16,12 +17,9 @@ export default function Weather(props) {
       <div className="row Indicators">
         <div className="col-6">
           <div className="clearfix-weather-values">
-            <img
-              src={props.result.icon}
-              alt={props.result.description}
-              className="float-left"
-            />
-
+            <div className="float-left">
+              <WeatherIcon icon={props.result.icon} />
+            </div>
             <div className="float-left">
               <strong>{Math.round(props.result.temperature)}</strong>
               <span className="symbols">
@@ -46,6 +44,7 @@ export default function Weather(props) {
             alt={props.result.description}
             className="float-left"
           />
+
           <br />
           <span className="temp">12° </span>
           <span className="temp">20°</span>

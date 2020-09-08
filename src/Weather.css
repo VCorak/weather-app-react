@@ -4,12 +4,13 @@
 }
 .Indicators {
   margin-top: 20px;
+  margin-left: -7px;
 }
 
-.clearfix-weather-values img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
+.clearfix-weather-values canvas {
+  margin-right: 7px;
+  height: 54px;
+  width: 54px;
 }
 
 .clearfix-weather-values strong {
