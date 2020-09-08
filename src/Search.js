@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Weather from "./Weather";
+
 import "./Search.css";
 
 export default function Search() {
@@ -24,7 +25,8 @@ export default function Search() {
             <input
               type="search"
               placeholder="Type a city.."
-              autoComplete="Off"
+              autoComplete="off"
+              autoFocus="on"
               className="form-control shadow sm"
               onChange={updateCity}
             />
@@ -32,7 +34,7 @@ export default function Search() {
           <div className="col-3">
             <input
               type="submit"
-              className="form-control btn btn-primary shadow sm"
+              className="form-control btn btn-primary shadow sm w-100"
               value="Search"
             />
           </div>

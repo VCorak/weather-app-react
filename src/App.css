@@ -4,11 +4,10 @@
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
-}
-
-body {
   font-family: arial, sans-serif;
 }
+
+
 
 h1 {
   color: #878787;
@@ -37,6 +36,6 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-.Container small {
-  margin: 0 auto;
+footer {
+  margin: 10px 0;
 }
