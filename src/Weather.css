@@ -35,25 +35,4 @@
   text-decoration: none;
 }
 
-.HourlyForecast {
-  margin: 20px auto;
-}
 
-.HourlyForecast .time,
-.temp {
-  color: rgb(186, 186, 186);
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  height: 15px;
-  line-height: 15px;
-  padding-top: 7px;
-  white-space: nowrap;
-}
-
-.HourlyForecast img {
-  display: block;
-  margin: 0 auto;
-  height: 48px;
-  width: 48px;
-}
