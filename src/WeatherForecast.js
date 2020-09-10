@@ -11,7 +11,7 @@ export default function WeatherForecast(props) {
   function displayHourForecast(response) {
     setForecast(response.data);
     setOnLoad(true);
-    console.log(response.data);
+    
   }
 
   if (onLoad && props.city === forecast.city.name) {

@@ -1,6 +1,8 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 
+import "./WeatherForecastPreview.css";
+
 export default function WeatherForecastPreview(props) {
   function hours() {
     let date = new Date(props.data.dt * 1000);
@@ -9,16 +11,18 @@ export default function WeatherForecastPreview(props) {
       hours = `0${hours}`;
     }
 
-    return `${hours}:00`;
+    return <div className="ForecastHours">{`${hours}:00`}</div>;
   }
 
   function temperature() {
-    let temp_min = Math.round(props.data.main.temp_min);
-    let temp_max = Math.round(props.data.main.temp_max);
+    
+    let maxTemp = Math.round(props.data.main.temp_max);
+    let minTemp = Math.round(props.data.main.temp_min);
+
     return (
-      <div>
-        <strong>{temp_max}°</strong> 
-        {temp_min}°
+      <div className="tempMaxMin">
+        <strong>{maxTemp}°</strong> {""}
+        {minTemp}°
       </div>
     );
   }
