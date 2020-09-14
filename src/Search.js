@@ -30,13 +30,26 @@ export default function Search(props) {
 
   function updateCity(event) {
     setCity(event.target.value);
-    
   }
 
   function searchCity() {
     const apiKey = `dc3b4bf1b160e133e1bbb630f9cef74a`;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showResults);
+  }
+
+  function instantLocation(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiKey = `dc3b4bf1b160e133e1bbb630f9cef74a`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showResults);
+    apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(<WeatherForecast />);
+  }
+
+  function getCurrentLocation() {
+    navigator.geolocation.getCurrentPosition(instantLocation);
   }
 
   if (result.ready) {
@@ -62,7 +75,13 @@ export default function Search(props) {
               />
             </div>
 
-            <button className="btn btn-primary shadow sm">↺</button>
+            <button
+              className="update btn btn-primary shadow sm"
+              type="submit"
+              onClick={getCurrentLocation}
+            >
+              ↺
+            </button>
           </div>
         </form>
 
