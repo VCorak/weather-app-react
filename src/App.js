@@ -11,7 +11,11 @@ function App() {
       </div>
       <footer>
         <small>
-          <a href="https://github.com/VCorak/weather-app-react" target="_blank">
+          <a
+            href="https://github.com/VCorak/weather-app-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Open-source code
           </a>
           , by Valentina Corak
