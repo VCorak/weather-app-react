@@ -48,7 +48,11 @@ export default function Search(props) {
   }
 
   function getCurrentLocation() {
-    navigator.geolocation.getCurrentPosition(instantLocation);
+    if (navigator.geolocation === "false") {
+      alert("Please turn on your location");
+    } else {
+      navigator.geolocation.getCurrentPosition(instantLocation);
+    }
   }
 
   if (result.ready) {
