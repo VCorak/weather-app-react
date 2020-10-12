@@ -39,7 +39,7 @@ export default function Search(props) {
   function instantLocation(position) {
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
-    let apiKey = `dc3b4bf1b160e133e1bbb630f9cef74a`;
+    
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showResults);
     apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
